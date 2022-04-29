@@ -1,0 +1,81 @@
+.modal_images_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.modal_images_container .modal_images_icon_close {
+  align-self: flex-end;
+  margin-right: 30%;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.modal_images_container .modal_images_big_picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_images_container .modal_images_big_picture img {
+  border-radius: 10px;
+}
+
+.modal_images_container .modal_images_big_picture button {
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.modal_images_container .modal_images_big_picture .modal_left_button {
+  margin-right: -10px;
+}
+
+.modal_images_container .modal_images_big_picture .modal_right_button {
+  margin-left: -10px;
+}
+
+.modal_images_container .modal_images_big_picture button img {
+  width: 24px;
+  height: 24px;
+}
+
+.modal_images_container .modal_images_small_pictures {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.modal_images_container .modal_images_small_pictures img {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .modal_images_container .modal_images_big_picture img:nth-child(2) {
+    width: 300px;
+    height: 300px;
+  }
+
+  .modal_images_container .modal_images_small_pictures img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .modal_images_container {
+    display: none;
+  }
+}

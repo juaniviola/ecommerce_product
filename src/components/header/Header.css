@@ -1,0 +1,252 @@
+.header_hidden {
+  display: none;
+}
+
+.header_title h2 {
+  margin: 16px 0;
+  font-size: 2em;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: .5px solid #dfdddd;
+  margin: 0 8% 0 8%;
+  padding-bottom: 4px;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header_burger {
+  display: none;
+}
+
+.header_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.header_buttons ul li {
+  display: inline;
+  cursor: pointer;
+  color: #a7a1a1;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+.header_buttons ul li:hover {
+  color: #e5e1e1;
+  padding-bottom: 22px;
+  border-bottom: 4px solid hsl(26, 100%, 55%);
+}
+
+.header_picture {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.header_picture img {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.header_notification {
+  position: absolute;
+  font-weight: bold;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  border-radius: 100%;
+  padding: 1px 7px;
+  margin: 0 10px 40px 0;
+}
+
+.header_sidebar {
+  display: none;
+}
+
+.header_cart {
+  z-index: 1;
+  position: absolute;
+  background-color: white;
+  box-shadow: 6px 3px 38px -9px rgba(0,0,0,0.58);
+  border-radius: 8px;
+  width: 350px;
+  min-height: 200px;
+  right: 5%;
+  top: 10%;
+}
+
+.header_cart h3 {
+  margin-left: 5%;
+}
+
+.header_cart .line {
+  border-bottom: .5px solid #e5e1e1;
+}
+
+.header_cart .header_cart_empty {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a7a1a1;
+  font-weight: bold;
+}
+
+.header_cart_products {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header_cart_products img {
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header_cart_products_info {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #a7a1a1;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.header_cart_products_info b {
+  color: black;
+}
+
+.header_cart_checkout {
+  font-weight: bold;
+  width: 94%;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 12px 60px;
+  background-color: hsl(26, 100%, 55%);;
+  color: white;
+  border-radius: 4px;
+  margin: 5px 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .header_title h2 {
+    font-size: 1.2em;
+    margin: 18px 0;
+  }
+
+  .header_buttons {
+    margin-top: 0;
+  }
+
+  .header_buttons ul li {
+    font-size: 12px;
+  }
+
+  .header_picture img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header_title h2 {
+    font-size: 2em;
+  }
+
+  .header_container {
+    margin: 0;
+  }
+
+  .header_picture img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header_burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+  }
+
+  .header_burger img {
+    cursor: pointer;
+  }
+
+  .header_menu {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .header_buttons {
+    display: none;
+  }
+
+  .header_sidebar {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+  }
+
+  .header_content {
+    width: 100%;
+    max-width: 250px;
+    background-color: white;
+    height: 100vh;
+  }
+
+  .header_content img {
+    margin: 5% 0 15% 10%;
+    cursor: pointer;
+  }
+
+  .header_content nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_content nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+
+  .header_cart {
+    right: 5%;
+    width: 90vw;
+  }
+}
