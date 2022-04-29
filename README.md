@@ -1,6 +1,7 @@
 # Ecommerce Product Page
 
 Frontend Ecommerce product using React & Scss.
+This is a challenge from "Frontend Mentor" in <https://bit.ly/3vs34e7>
 
 ## Install & Run
 
